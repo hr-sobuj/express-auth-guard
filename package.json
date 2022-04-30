@@ -1,6 +1,6 @@
 {
   "name": "express-auth-guard",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "It will help to check whether the user is logged in or not",
   "keywords": [
     "express js",
