@@ -20,6 +20,10 @@ router.get('/', authGuard(secret_key), (req,res)=>{
 });
 
 ```
+## Get Token Information
+```
+console.log(req.user);
+```
 
 
 Powered by https://fb.com/habibur.rahman.sobuj.bd

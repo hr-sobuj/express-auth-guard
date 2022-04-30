@@ -14,6 +14,7 @@ function authGuard(secret_key) {
                 req.user = decode;
 
                 next();
+
             } else {
                 res.status(401).json({
                     error: 'Incorrect Information!',
