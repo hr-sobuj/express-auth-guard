@@ -8,12 +8,15 @@ npm i express-auth-guard
 
 ## How to use 
 
+> :warning: **Please provide correct JWT_SECRET_KEY.
+
+
 ```
 const authGuard = require('express-auth-guard'); 
 
-let secret_key='slkdfjoapifjaksjasifaoidflak';
+let jwt_secret_key='slkdfjoapifjaksjasifaoidflak';
 
-router.get('/', authGuard(secret_key), (req,res)=>{
+router.get('/', authGuard(jwt_secret_key), (req,res)=>{
     res.statu(200).json({
         msg:"Ok"
     })
