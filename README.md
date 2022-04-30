@@ -1,8 +1,10 @@
 # Express Auth Guard
-It will help to check user are logged in or not.
+It will help to check whether the user is logged in or not
 
 ## How to install
-`npm i express-auth-guard`
+```
+npm i express-auth-guard
+```
 
 ## How to use 
 
