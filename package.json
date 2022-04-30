@@ -3,9 +3,15 @@
   "version": "1.0.12",
   "description": "It will help to check whether the user is logged in or not",
   "keywords": [
+    "nodejs",
+    "expressjs",
     "express js",
-    "authentication checker",
-    "authentication"
+    "authentication",
+    "nodejs-modules",
+    "authentication-guards",
+    "expressjs-middleware",
+    "authentication-guard",
+    "express-auth-guard"
   ],
   "main": "app.js",
   "scripts": {
