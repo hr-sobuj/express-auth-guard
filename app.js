@@ -15,15 +15,13 @@ function authGuard(secret_key) {
             } else {
                 res.status(401).json({
                     error: 'Incorrect Information!',
-                    secret_key,
-                    token
+                    secret_key
                 });
             }
         } catch (error) {
             res.status(401).json({
                 error: 'Authetication failure!',
-                secret_key,
-                token
+                secret_key
             });
         }
     }
