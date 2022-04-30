@@ -2,8 +2,11 @@ const jwt = require('jsonwebtoken');
 
 function authGuard(secret_key) {
     return  (req, res, next)=>{
+        console.log("head",req.headers);
+        console.log("key",secret_key);
         try {
             const auth = req.headers.authorization;
+            console.log("auth",auth);
             if (auth && auth.length > 0) {
                 // get token
                 const token = auth.split(' ')[1];
