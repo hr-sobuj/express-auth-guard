@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 function authGuard(secret_key) {
-    return  (req, res, next)=>{
+    return (req, res, next) => {
         try {
             const auth = req.headers.authorization;
             if (auth && auth.length > 0) {
@@ -9,7 +9,7 @@ function authGuard(secret_key) {
                 const token = auth.split(' ')[1];
                 // verify token
                 const decode = jwt.verify(token, secret_key);
-    
+
                 req.admin = decode;
                 next();
             } else {
@@ -24,5 +24,6 @@ function authGuard(secret_key) {
         }
     }
 }
+
 // export module
 module.exports = authGuard;
