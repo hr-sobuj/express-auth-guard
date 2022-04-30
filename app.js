@@ -14,12 +14,12 @@ function authGuard(JWT_SECRET) {
                 next();
             } else {
                 res.status(401).json({
-                    error: 'Authetication failure!',
+                    error: 'Incorrect Information!',
                 });
             }
         } catch (error) {
             res.status(401).json({
-                error: 'Authetication failure!',
+                error: 'Authetication failure 2!',
             });
         }
     }
