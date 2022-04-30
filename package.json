@@ -1,8 +1,12 @@
 {
   "name": "express-auth-guard",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "It will help to check whether the user is logged in or not",
-  "keywords": ["express js","authentication checker","authentication"],
+  "keywords": [
+    "express js",
+    "authentication checker",
+    "authentication"
+  ],
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
