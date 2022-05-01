@@ -17,7 +17,7 @@ function authGuard(jwt_secret_key) {
 
             } else {
                 res.status(401).json({
-                    error: 'Incorrect Information!',
+                    error: 'Incorrect Auth Information!',
                 });
             }
         } catch (error) {
