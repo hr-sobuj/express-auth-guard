@@ -1,6 +1,6 @@
 {
   "name": "express-auth-guard",
-  "version": "1.0.16",
+  "version": "1.0.18",
   "description": "It will help to check whether the user is logged in or not in your express js application.",
   "keywords": [
     "nodejs",
