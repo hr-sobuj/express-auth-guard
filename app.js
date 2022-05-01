@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-function authGuard(secret_key) {
+function authGuard(jwt_secret_key) {
     return (req, res, next) => {
         try {
             const authorization = req.headers.authorization;
@@ -8,7 +8,7 @@ function authGuard(secret_key) {
                 // get token
                 const token = authorization.split(' ')[1];
                 // verify token
-                const decode = jwt.verify(token, secret_key);
+                const decode = jwt.verify(token, jwt_secret_key);
 
                 // get user info 
                 req.user = decode;
