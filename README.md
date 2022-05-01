@@ -1,5 +1,6 @@
 # Express Auth Guard
-It will help to check whether the user is logged in or not.
+It will help to check whether the user is logged in or not in your express js application.
+
 
 ## How to install
 ```
