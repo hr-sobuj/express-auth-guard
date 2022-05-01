@@ -29,3 +29,5 @@ router.get('/', authGuard(jwt_secret_key), (req,res)=>{
 console.log(req.user);
 ```
 
+
+Powered by https://fb.com/habibur.rahman.sobuj.bd
